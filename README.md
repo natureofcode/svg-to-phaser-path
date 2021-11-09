@@ -22,18 +22,3 @@ const jsonPath = svgToPhaserPath(d);
 
 const path = new Phaser.Curves.Path(jsonPath);
 ```
-
-## If you have missing Quadratic Bezier curves on Phaser version `<=3.55.2`:
-### First solution (converting to Cubic Bezier):
-```js
-const jsonPath = svgToPhaserPath(d, true);
-```
-### Second solution (manually fixing JSONPath):
-```js
-const jsonPath = svgToPhaserPath(d);
-jsonPath.curves.forEach((curve) => {
-  if (curve.type === 'QuadraticBezier') {
-    curve.type = 'QuadraticBezierCurve';
-  }
-});
-```
