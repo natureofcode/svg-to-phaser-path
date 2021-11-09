@@ -179,7 +179,14 @@ function svgToPhaserPath(d, quadraticToCubic = false) {
     prev = cmd;
   }
 
-  return path.toJSON();
+  const result = path.toJSON();
+  result.curves.forEach((curve) => {
+    if (curve.type === 'QuadraticBezier') {
+      curve.type = 'QuadraticBezierCurve';
+    }
+  });
+
+  return result;
 }
 
 export default svgToPhaserPath;
