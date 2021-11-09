@@ -1,0 +1,33 @@
+{
+  "name": "svg-to-phaser-path",
+  "version": "0.1.0",
+  "description": "Convert SVG Path to Phaser Path",
+  "author": "Egor Tyurin",
+  "license": "Fair",
+  "homepage": "https://natureofcode.github.io/svg-to-phaser-path/",
+  "repository": "github:natureofcode/svg-to-phaser-path",
+  "main": "index.js",
+  "files": [],
+  "scripts": {
+    "pretty": "prettier --write ."
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "devDependencies": {
+    "prettier": "2.4.1"
+  },
+  "dependencies": {
+    "phaser": "3.x",
+    "svg-arc-to-cubic-bezier": "^3.2.0",
+    "svg-path-parser": "^1.1.0"
+  },
+  "keywords": [
+    "svg",
+    "path",
+    "d",
+    "curve",
+    "convert",
+    "phaser"
+  ]
+}
