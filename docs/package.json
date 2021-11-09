@@ -1,0 +1,15 @@
+{
+  "name": "public",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/esbuild.mjs"
+  },
+  "devDependencies": {
+    "@fal-works/esbuild-plugin-global-externals": "^2.1.2",
+    "esbuild": "^0.13.13"
+  },
+  "dependencies": {
+    "lodash.debounce": "^4.0.8",
+    "phaser": "3.x"
+  }
+}
