@@ -22,3 +22,11 @@ const jsonPath = svgToPhaserPath(d);
 
 const path = new Phaser.Curves.Path(jsonPath);
 ```
+
+## Changelog
+
+### v0.2.0 - 2021-Nov-10
++ Let the function automatically fix `type` field of `Quadratic` curves.
+
+### v0.1.0 - 2021-Nov-9
++ First release.
