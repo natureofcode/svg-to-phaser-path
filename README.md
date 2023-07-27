@@ -12,6 +12,7 @@ Converts SVG `<path>` to `Phaser.Curves.Path` instance and returns it as `JSONPa
 
 ## Usage:
 ```js
+import { Curves } from 'phaser';
 import svgToPhaserPath from 'svg-to-phaser-path';
 
 const d = `M600,350 l 50,-25
