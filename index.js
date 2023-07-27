@@ -1,4 +1,4 @@
-import Phaser from 'phaser';
+import { Curves } from 'phaser';
 import arcToBezier from 'svg-arc-to-cubic-bezier';
 import { parseSVG, makeAbsolute } from 'svg-path-parser';
 
@@ -12,7 +12,7 @@ const TWO_THIRDS = 2 / 3;
  * @return {Phaser.Types.Curves.JSONPath} `JSONPath` object that is the result of calling `toJSON()` method on the converted `Phaser.Curves.Path` instance.
  */
 function svgToPhaserPath(d, quadraticToCubic = false) {
-  const path = new Phaser.Curves.Path();
+  const path = new Curves.Path();
 
   const parsed = makeAbsolute(parseSVG(d));
 
