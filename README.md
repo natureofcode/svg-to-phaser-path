@@ -20,7 +20,9 @@ const d = `M600,350 l 50,-25
 
 const jsonPath = svgToPhaserPath(d);
 
-const path = new Phaser.Curves.Path(jsonPath);
+const path = new Curves.Path();
+path.fromJSON(jsonPath);
+
 ```
 
 ## Changelog
