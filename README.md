@@ -28,6 +28,9 @@ path.fromJSON(jsonPath);
 
 ## Changelog
 
+### v0.3.0 - 2023-Jul-28
++ Tiny internal refactoring for better compatibility with bundlers (thanks @johnedvard)
+
 ### v0.2.0 - 2021-Nov-10
 + Let the function automatically fix `type` field of `Quadratic` curves.
 
